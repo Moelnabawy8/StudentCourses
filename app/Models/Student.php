@@ -15,5 +15,9 @@ class Student extends Model
 {
     return $this->belongsToMany(Course::class);
 }
+    public function professor()
+    {
+     return $this->belongsTo(Professor::class, 'professor_id');
+    }
 
 }

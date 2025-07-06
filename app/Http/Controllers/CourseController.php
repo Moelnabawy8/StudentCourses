@@ -45,9 +45,10 @@ public function destroy($id)
     $course->delete();
     return redirect()->route('courses.index')->with('success', 'تم حذف الكورس بنجاح');
   }
-  public function show($id)
-  {
-    $course = Course::findOrFail($id);
-    return view('courses.show', compact('course'));   
-  }
+ public function show($id)
+{
+    $course = Course::with('students')->findOrFail($id);
+    return view('courses.show', compact('course'));
+}
+
 }

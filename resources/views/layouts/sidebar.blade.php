@@ -36,7 +36,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{route("courses.index")}}" class="nav-link active">
+                            <a href="{{route("courses.index")}}" class="nav-link ">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>ضبط الكورسات</p>
                             </a>
@@ -48,9 +48,9 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{route("professors.index")}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>بيانات حجوزات الكورسات</p>
+                                <p>بيانات المدرسين</p>
                             </a>
                         </li>
                     </ul>
